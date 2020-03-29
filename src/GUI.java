@@ -39,7 +39,7 @@ public class GUI extends javax.swing.JFrame {
         lblFirstNameStudentForm = new javax.swing.JLabel();
         lblLastNameStudentForm = new javax.swing.JLabel();
         lblAgeStudentForm = new javax.swing.JLabel();
-        lblGradDateStudentForm = new javax.swing.JLabel();
+        lblGradYearStudentForm = new javax.swing.JLabel();
         lblCurrentYearStudentForm = new javax.swing.JLabel();
         lblMajorStudentForm = new javax.swing.JLabel();
         txtFirstNameStudentForm = new javax.swing.JTextField();
@@ -63,7 +63,7 @@ public class GUI extends javax.swing.JFrame {
         lblSalaryTeacherForm = new javax.swing.JLabel();
         lblDepartmentTeacherForm = new javax.swing.JLabel();
         txtTenureTeacherForm = new javax.swing.JTextField();
-        txtDepartmnetTeacherForm = new javax.swing.JTextField();
+        txtDepartmentTeacherForm = new javax.swing.JTextField();
         txtSalaryTeacherForm = new javax.swing.JTextField();
         tabCounselorForm = new javax.swing.JPanel();
         lblFirstNameCounselorForm = new javax.swing.JLabel();
@@ -99,9 +99,9 @@ public class GUI extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         lblGradDateAndDepartmentAndStudentsIDLookup = new javax.swing.JLabel();
-        txtGradDateIDLookup = new javax.swing.JTextField();
+        txtGradYearAndDepartmentAndStudentsIDLookup = new javax.swing.JTextField();
         lblMajorAndTenureIDLookup = new javax.swing.JLabel();
-        txtMajorIDLookup = new javax.swing.JTextField();
+        txtMajorAndTenureIDLookup = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -155,9 +155,9 @@ public class GUI extends javax.swing.JFrame {
         lblAgeStudentForm.setText("Age:");
         tabStudentForm.add(lblAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 107, 65, -1));
 
-        lblGradDateStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblGradDateStudentForm.setText("Grad. Date:");
-        tabStudentForm.add(lblGradDateStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
+        lblGradYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblGradYearStudentForm.setText("Grad. Year:");
+        tabStudentForm.add(lblGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
 
         lblCurrentYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCurrentYearStudentForm.setText("Current Year:");
@@ -178,6 +178,11 @@ public class GUI extends javax.swing.JFrame {
         tabStudentForm.add(lblStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 511, 18));
 
         btnAddStudentStudentForm.setText("Add Student");
+        btnAddStudentStudentForm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddStudentStudentFormActionPerformed(evt);
+            }
+        });
         tabStudentForm.add(btnAddStudentStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
 
         cboCurYearStudentForm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Freshman", "Sophmore", "Junior", "Senior" }));
@@ -235,7 +240,7 @@ public class GUI extends javax.swing.JFrame {
         lblDepartmentTeacherForm.setText("Department: ");
         tabTeacherForm.add(lblDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
         tabTeacherForm.add(txtTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
-        tabTeacherForm.add(txtDepartmnetTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
+        tabTeacherForm.add(txtDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
         tabTeacherForm.add(txtSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
 
         jTabbedPane1.addTab("Teacher Form", null, tabTeacherForm, "New Teacher Form");
@@ -380,21 +385,21 @@ public class GUI extends javax.swing.JFrame {
         lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
         tabIDLookup.add(lblGradDateAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(-7, 124, 100, -1));
 
-        txtGradDateIDLookup.setEditable(false);
-        txtGradDateIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        txtGradDateIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtGradDateIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtGradDateIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 72, -1));
+        txtGradYearAndDepartmentAndStudentsIDLookup.setEditable(false);
+        txtGradYearAndDepartmentAndStudentsIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtGradYearAndDepartmentAndStudentsIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtGradYearAndDepartmentAndStudentsIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtGradYearAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 72, -1));
 
         lblMajorAndTenureIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblMajorAndTenureIDLookup.setText("Tenure:");
         tabIDLookup.add(lblMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 124, 50, -1));
 
-        txtMajorIDLookup.setEditable(false);
-        txtMajorIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        txtMajorIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtMajorIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtMajorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 120, 72, -1));
+        txtMajorAndTenureIDLookup.setEditable(false);
+        txtMajorAndTenureIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtMajorAndTenureIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtMajorAndTenureIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 120, 72, -1));
 
         jTabbedPane1.addTab("ID Lookup", null, tabIDLookup, "Lookup Person By ID");
 
@@ -420,30 +425,48 @@ public class GUI extends javax.swing.JFrame {
 
     private void cboPersonSelectorIDLookupItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboPersonSelectorIDLookupItemStateChanged
         if(selectedButton.equals("Students")){
-            if(!(cboPersonSelectorIDLookup.getItemCount()==0)){
+            
+            if(cboPersonSelectorIDLookup.getItemCount()!=0){
             Student displayPerson = DataBase.StudentIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
             txtFirstNameIDLookup.setText(displayPerson.getFirstName());
             txtLastNameIDLookup.setText(displayPerson.getFirstName());
+            txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+            txtMajorAndTenureIDLookup.setText(displayPerson.getMajor());
+            txtGradYearAndDepartmentAndStudentsIDLookup.setText(displayPerson.getGradDate());
+            txtCurYearAndSalaryIDLookup.setText(displayPerson.getCurrentYear());
             }
+            
         }
         else if(selectedButton.equals("Teachers")){
-            Teacher displayPerson = DataBase.TeacherIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
-            if(displayPerson.equals(null)){
-                return;
+            
+            if(cboPersonSelectorIDLookup.getItemCount() != 0){
+                Teacher displayPerson = DataBase.TeacherIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+                txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+                txtLastNameIDLookup.setText(displayPerson.getLastName());
+                txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+                txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
+                txtGradYearAndDepartmentAndStudentsIDLookup.setText(displayPerson.getDepartment());
+                txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
             }
-            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
-            txtLastNameIDLookup.setText(displayPerson.getLastName());
+            
         }
+        
         else if(selectedButton.equals("Counselors")){
-            Counselor displayPerson = DataBase.CounselorIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
-            if(displayPerson.equals(null)){
-                return;
+            
+            if(cboPersonSelectorIDLookup.getItemCount() != 0){
+                Counselor displayPerson = DataBase.CounselorIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+                txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+                txtLastNameIDLookup.setText(displayPerson.getLastName());
+                txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+                txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
+                txtGradYearAndDepartmentAndStudentsIDLookup.setText(Integer.toString(displayPerson.getNumberOfStudents()));
+                txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
             }
-            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
-            txtLastNameIDLookup.setText(displayPerson.getLastName());
-        } else {
+            
+        } 
+        
+        else {
             System.err.print("Problem on line 382");
-            return;
         }
         //FirstNameDisplay.setText(displayPerson);
         
@@ -451,10 +474,24 @@ public class GUI extends javax.swing.JFrame {
 
     private void radStudentsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radStudentsIDLookupActionPerformed
         selectedButton = "Students";
+        
+        //Clears all output fields
+        txtFirstNameIDLookup.setText("");
+        txtLastNameIDLookup.setText("");
+        txtAgeIDLookup.setText("");
+        txtMajorAndTenureIDLookup.setText("");
+        txtCurYearAndSalaryIDLookup.setText("");
+        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
+        
+        //Sets lables for coresponding Teacher Fields
         lblCurYearAndSalaryIDLookup.setText("Current Year:");
-        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Graduation Date:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Graduation Year:");
         lblMajorAndTenureIDLookup.setText("Major:");
+        
+        //Removes all items in the combobox
         cboPersonSelectorIDLookup.removeAllItems();
+        
+        //Adds all the contents of studentlist ids to the combobox
         for(int i = 0; i < DataBase.GetStudentList().size(); i ++){
             cboPersonSelectorIDLookup.addItem(DataBase.GetStudentList().get(i).getID());
         }
@@ -462,55 +499,117 @@ public class GUI extends javax.swing.JFrame {
 
     private void radTeachersIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radTeachersIDLookupActionPerformed
         selectedButton = "Teachers";
+        
+        //Clears all output fields
+        txtFirstNameIDLookup.setText("");
+        txtLastNameIDLookup.setText("");
+        txtAgeIDLookup.setText("");
+        txtMajorAndTenureIDLookup.setText("");
+        txtCurYearAndSalaryIDLookup.setText("");
+        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
+        
+        //Sets lables for coresponding Teacher Fields
         lblCurYearAndSalaryIDLookup.setText("Salary:");
         lblGradDateAndDepartmentAndStudentsIDLookup.setText("Department:");
         lblMajorAndTenureIDLookup.setText("Tenure:");
+        System.out.println(cboPersonSelectorIDLookup.getItemCount());
+        
+        //Removes all items in the combobox
         cboPersonSelectorIDLookup.removeAllItems();
+        
+        //Adds all the contents of teacherlist ids to the combobox
         for(int i = 0; i < DataBase.GetTeacherList().size(); i++){
             System.out.println(DataBase.GetTeacherList().get(i).getID());
             cboPersonSelectorIDLookup.addItem(DataBase.GetTeacherList().get(i).getID());
         }
+        
     }//GEN-LAST:event_radTeachersIDLookupActionPerformed
     
     public void ErrorPopUp(String message){
         javax.swing.JOptionPane.showMessageDialog(null, 
-                 "Programer: Jacob Bennett\n"
-                         + "Year: 2020\n"
-                         + "I, Jacob Bennett, programed this code\n"
-                         + "CyberSecurity 2023\n"
-                         + "Benne238@purdue.edu");                                          
+                 message);                                          
     }
     
     private void btnAddTeacherTeacherFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTeacherTeacherFormActionPerformed
-        DataBase.AddTeacher(new Teacher(txtFirstNameTeacherForm.getText(), txtLastNameTeacherForm.getText(), 48, 2.00, 0, "CIT"));
-        //personSelecter.addItem()
-        //System.out.println(George.getDepartment());
-        //System.out.println(George.getID());
-        //DisplayWindow.setText("successfully added person: " + George.getFirstName() + " " + George.getLastName());
+        DataBase.AddTeacher(new Teacher(
+                txtFirstNameTeacherForm.getText(), //Gets First Name from form
+                txtLastNameTeacherForm.getText(), //Gets Last Name from form
+                Integer.parseInt(txtAgeTeacherForm.getText()), //Gets and Parses Age into an int from form
+                Double.parseDouble(txtSalaryTeacherForm.getText()), //Gets and Parses Salary into a double from form
+                Integer.parseInt(txtTenureTeacherForm.getText()),  //Gets and Parses Tenure into an int from form
+                txtDepartmentTeacherForm.getText()  //Gets Department from form
+        ));
+        
+        //Clears New Teacher Form Inputs
+        txtFirstNameTeacherForm.setText("");
+        txtLastNameTeacherForm.setText("");
+        txtAgeTeacherForm.setText("");
+        txtSalaryTeacherForm.setText("");
+        txtTenureTeacherForm.setText("");
+        txtDepartmentTeacherForm.setText("");
+        
+        //Immediatly Adds ID to the ID Lookup combo box if the teachers button is selected
         if(selectedButton.equals("Teachers")){
             Teacher newTeacher = DataBase.GetTeacherList().get(DataBase.GetTeacherList().size() - 1);
             cboPersonSelectorIDLookup.addItem(newTeacher.getID());
-            //FirstNameDisplay.setText(newTeacher.getFirstName());
-            //LastNameDisplay.setText(newTeacher.getLastName());
-
         }
     }//GEN-LAST:event_btnAddTeacherTeacherFormActionPerformed
 
     private void radCounselorsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radCounselorsIDLookupActionPerformed
         selectedButton = "Counselors";
+        
+        //Clears all output fields
+        txtFirstNameIDLookup.setText("");
+        txtLastNameIDLookup.setText("");
+        txtAgeIDLookup.setText("");
+        txtMajorAndTenureIDLookup.setText("");
+        txtCurYearAndSalaryIDLookup.setText("");
+        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
+        
+        //Sets lables for coresponding Counselor Fields
         lblCurYearAndSalaryIDLookup.setText("Salary:");
         lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
         lblMajorAndTenureIDLookup.setText("Tenure:");
+        
+        //Removes all items in the combobox
         cboPersonSelectorIDLookup.removeAllItems();
+        
+        //Adds all the contents of counelorlist ids to the combobox
         for(int i = 0; i < DataBase.GetCounselorList().size(); i++){
             System.out.println(DataBase.GetCounselorList().get(i).getID());
             cboPersonSelectorIDLookup.addItem(DataBase.GetCounselorList().get(i).getID());
         }
+        
     }//GEN-LAST:event_radCounselorsIDLookupActionPerformed
 
     private void btnAddCounselorCounselorFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCounselorCounselorFormActionPerformed
-        // TODO add your handling code here:
+        DataBase.AddCounselor(new Counselor(
+                txtFirstNameCounselorForm.getText(), //Gets First Name from form
+                txtLastNameCounselorForm.getText(), //Gets Last Name from form
+                Integer.parseInt(txtAgeCounselorForm.getText()), //Gets and Parses Age into an int from form
+                Double.parseDouble(txtSalaryCounselorForm.getText()), //Gets and Parses Salary into a double from form
+                Integer.parseInt(txtTenureCounselorForm.getText()),  //Gets and Parses Tenure into an int from form
+                Integer.parseInt(txtStudentsCounselorForm.getText())  //Gets and Parses Students into an int from form
+        ));
+        
+        //Clears New Counselor Form Inputs
+        txtFirstNameCounselorForm.setText("");
+        txtLastNameCounselorForm.setText("");
+        txtAgeCounselorForm.setText("");
+        txtSalaryCounselorForm.setText("");
+        txtTenureCounselorForm.setText("");
+        txtStudentsCounselorForm.setText("");
+        
+        //Immediatly Adds ID to the ID Lookup combo box if the counselors button is selected
+        if(selectedButton.equals("Counselors")){
+            Counselor newCounselor = DataBase.GetCounselorList().get(DataBase.GetCounselorList().size() - 1);
+            cboPersonSelectorIDLookup.addItem(newCounselor.getID());
+        }
     }//GEN-LAST:event_btnAddCounselorCounselorFormActionPerformed
+
+    private void btnAddStudentStudentFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddStudentStudentFormActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddStudentStudentFormActionPerformed
 
     /**
      * @param args the command line arguments
@@ -550,7 +649,7 @@ public class GUI extends javax.swing.JFrame {
      
      //TeacherIDs.add("0");   
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddCounselorCounselorForm;
     private javax.swing.JButton btnAddStudentStudentForm;
@@ -580,7 +679,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblFirstNameStudentForm;
     private javax.swing.JLabel lblFirstNameTeacherForm;
     private javax.swing.JLabel lblGradDateAndDepartmentAndStudentsIDLookup;
-    private javax.swing.JLabel lblGradDateStudentForm;
+    private javax.swing.JLabel lblGradYearStudentForm;
     private javax.swing.JLabel lblIDLookup;
     private javax.swing.JLabel lblLastNameCounselorForm;
     private javax.swing.JLabel lblLastNameIDLookup;
@@ -607,18 +706,18 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtAgeStudentForm;
     private javax.swing.JTextField txtAgeTeacherForm;
     private javax.swing.JTextField txtCurYearAndSalaryIDLookup;
-    private javax.swing.JTextField txtDepartmnetTeacherForm;
+    private javax.swing.JTextField txtDepartmentTeacherForm;
     private javax.swing.JTextField txtFirstNameCounselorForm;
     private javax.swing.JTextField txtFirstNameIDLookup;
     private javax.swing.JTextField txtFirstNameStudentForm;
     private javax.swing.JTextField txtFirstNameTeacherForm;
-    private javax.swing.JTextField txtGradDateIDLookup;
     private javax.swing.JTextField txtGradDateStudentForm;
+    private javax.swing.JTextField txtGradYearAndDepartmentAndStudentsIDLookup;
     private javax.swing.JTextField txtLastNameCounselorForm;
     private javax.swing.JTextField txtLastNameIDLookup;
     private javax.swing.JTextField txtLastNameStudentForm;
     private javax.swing.JTextField txtLastNameTeacherForm;
-    private javax.swing.JTextField txtMajorIDLookup;
+    private javax.swing.JTextField txtMajorAndTenureIDLookup;
     private javax.swing.JTextField txtMajorStudentForm;
     private javax.swing.JTextField txtSalaryCounselorForm;
     private javax.swing.JTextField txtSalaryTeacherForm;
@@ -626,4 +725,5 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtTenureCounselorForm;
     private javax.swing.JTextField txtTenureTeacherForm;
     // End of variables declaration//GEN-END:variables
+
 }
