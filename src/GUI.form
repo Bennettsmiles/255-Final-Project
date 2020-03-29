@@ -2,7 +2,7 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    <Component class="javax.swing.ButtonGroup" name="PersonTypeButtonGroup">
     </Component>
     <Container class="javax.swing.JDialog" name="jDialog1">
 
@@ -664,7 +664,7 @@
             <Component class="javax.swing.JRadioButton" name="radStudentsIDLookup">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
+                  <ComponentRef name="PersonTypeButtonGroup"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Students"/>
               </Properties>
@@ -680,7 +680,7 @@
             <Component class="javax.swing.JRadioButton" name="radTeachersIDLookup">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
+                  <ComponentRef name="PersonTypeButtonGroup"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Teachers"/>
               </Properties>
@@ -737,7 +737,7 @@
             <Component class="javax.swing.JRadioButton" name="radCounselorsIDLookup">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
+                  <ComponentRef name="PersonTypeButtonGroup"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Counselors"/>

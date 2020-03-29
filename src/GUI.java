@@ -29,7 +29,7 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
+        PersonTypeButtonGroup = new javax.swing.ButtonGroup();
         jDialog1 = new javax.swing.JDialog();
         jDialog2 = new javax.swing.JDialog();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
@@ -314,7 +314,7 @@ public class GUI extends javax.swing.JFrame {
         });
         tabIDLookup.add(cboPersonSelectorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 79, -1));
 
-        buttonGroup1.add(radStudentsIDLookup);
+        PersonTypeButtonGroup.add(radStudentsIDLookup);
         radStudentsIDLookup.setText("Students");
         radStudentsIDLookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -323,7 +323,7 @@ public class GUI extends javax.swing.JFrame {
         });
         tabIDLookup.add(radStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 55, 80, -1));
 
-        buttonGroup1.add(radTeachersIDLookup);
+        PersonTypeButtonGroup.add(radTeachersIDLookup);
         radTeachersIDLookup.setText("Teachers");
         radTeachersIDLookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -346,7 +346,7 @@ public class GUI extends javax.swing.JFrame {
         lblIDLookup.setText("ID Lookup");
         tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 485, 17));
 
-        buttonGroup1.add(radCounselorsIDLookup);
+        PersonTypeButtonGroup.add(radCounselorsIDLookup);
         radCounselorsIDLookup.setSelected(true);
         radCounselorsIDLookup.setText("Counselors");
         radCounselorsIDLookup.addActionListener(new java.awt.event.ActionListener() {
@@ -677,10 +677,10 @@ public class GUI extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup PersonTypeButtonGroup;
     private javax.swing.JButton btnAddCounselorCounselorForm;
     private javax.swing.JButton btnAddStudentStudentForm;
     private javax.swing.JButton btnAddTeacherTeacherForm;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> cboCurYearStudentForm;
     private javax.swing.JComboBox<String> cboPersonSelectorIDLookup;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
