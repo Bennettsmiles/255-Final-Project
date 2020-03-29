@@ -64,7 +64,7 @@ public class GUI extends javax.swing.JFrame {
         lblDepartmentTeacherForm = new javax.swing.JLabel();
         txtTenureTeacherForm = new javax.swing.JTextField();
         txtDepartmnetTeacherForm = new javax.swing.JTextField();
-        txtSalaryTeacherForm = new javax.swing.JFormattedTextField();
+        txtSalaryTeacherForm = new javax.swing.JTextField();
         tabCounselorForm = new javax.swing.JPanel();
         lblFirstNameCounselorForm = new javax.swing.JLabel();
         lblLastNameCounselorForm = new javax.swing.JLabel();
@@ -236,8 +236,6 @@ public class GUI extends javax.swing.JFrame {
         tabTeacherForm.add(lblDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
         tabTeacherForm.add(txtTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
         tabTeacherForm.add(txtDepartmnetTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
-
-        txtSalaryTeacherForm.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("¤#,##0.##"))));
         tabTeacherForm.add(txtSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
 
         jTabbedPane1.addTab("Teacher Form", null, tabTeacherForm, "New Teacher Form");
@@ -623,7 +621,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtMajorIDLookup;
     private javax.swing.JTextField txtMajorStudentForm;
     private javax.swing.JTextField txtSalaryCounselorForm;
-    private javax.swing.JFormattedTextField txtSalaryTeacherForm;
+    private javax.swing.JTextField txtSalaryTeacherForm;
     private javax.swing.JTextField txtStudentsCounselorForm;
     private javax.swing.JTextField txtTenureCounselorForm;
     private javax.swing.JTextField txtTenureTeacherForm;
