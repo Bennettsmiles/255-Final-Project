@@ -161,7 +161,7 @@
             <Component class="javax.swing.JLabel" name="lblGradYearStudentForm">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="11"/>
-                <Property name="text" type="java.lang.String" value="Grad. Year:"/>
+                <Property name="text" type="java.lang.String" value="Grad Year:"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
