@@ -156,7 +156,7 @@ public class GUI extends javax.swing.JFrame {
         tabStudentForm.add(lblAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 107, 65, -1));
 
         lblGradYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblGradYearStudentForm.setText("Grad. Year:");
+        lblGradYearStudentForm.setText("Grad Year:");
         tabStudentForm.add(lblGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
 
         lblCurrentYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
