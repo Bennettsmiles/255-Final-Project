@@ -344,7 +344,7 @@ public class GUI extends javax.swing.JFrame {
         lblIDLookup.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
         lblIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblIDLookup.setText("ID Lookup");
-        tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 485, 17));
+        tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 17));
 
         PersonTypeButtonGroup.add(radCounselorsIDLookup);
         radCounselorsIDLookup.setSelected(true);
