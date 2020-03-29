@@ -35,65 +35,73 @@ public class GUI extends javax.swing.JFrame {
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jCheckBoxMenuItem2 = new javax.swing.JCheckBoxMenuItem();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        tabStudentForm = new javax.swing.JPanel();
+        lblFirstNameStudentForm = new javax.swing.JLabel();
+        lblLastNameStudentForm = new javax.swing.JLabel();
+        lblAgeStudentForm = new javax.swing.JLabel();
+        lblGradDateStudentForm = new javax.swing.JLabel();
+        lblCurrentYearStudentForm = new javax.swing.JLabel();
+        lblMajorStudentForm = new javax.swing.JLabel();
+        txtFirstNameStudentForm = new javax.swing.JTextField();
+        txtLastNameStudentForm = new javax.swing.JTextField();
+        txtAgeStudentForm = new javax.swing.JTextField();
+        txtGradDateStudentForm = new javax.swing.JTextField();
+        txtMajorStudentForm = new javax.swing.JTextField();
+        lblStudentForm = new javax.swing.JLabel();
+        btnAddStudentStudentForm = new javax.swing.JButton();
+        cboCurYearStudentForm = new javax.swing.JComboBox<>();
+        tabTeacherForm = new javax.swing.JPanel();
+        btnAddTeacherTeacherForm = new javax.swing.JButton();
+        txtFirstNameTeacherForm = new javax.swing.JTextField();
+        txtLastNameTeacherForm = new javax.swing.JTextField();
+        txtAgeTeacherForm = new javax.swing.JTextField();
+        lblFirstNameTeacherForm = new javax.swing.JLabel();
+        lblLastNameTeacherForm = new javax.swing.JLabel();
+        lblAgeTeacherForm = new javax.swing.JLabel();
+        lblTeacherForm = new javax.swing.JLabel();
+        lblTenureTeacherForm = new javax.swing.JLabel();
+        lblSalaryTeacherForm = new javax.swing.JLabel();
+        lblDepartmentTeacherForm = new javax.swing.JLabel();
+        txtTenureTeacherForm = new javax.swing.JTextField();
+        txtDepartmnetTeacherForm = new javax.swing.JTextField();
+        txtSalaryTeacherForm = new javax.swing.JFormattedTextField();
+        tabCounselorForm = new javax.swing.JPanel();
+        lblFirstNameCounselorForm = new javax.swing.JLabel();
+        lblLastNameCounselorForm = new javax.swing.JLabel();
+        txtFirstNameCounselorForm = new javax.swing.JTextField();
+        txtLastNameCounselorForm = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        createTeacher = new javax.swing.JButton();
-        TeacherFirst = new javax.swing.JTextField();
-        TeacherLast = new javax.swing.JTextField();
-        teacherAge = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        teacherTenure = new javax.swing.JTextField();
-        teacherDepartment = new javax.swing.JTextField();
-        teacherSalary = new javax.swing.JFormattedTextField();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        FirstNameDisplay = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        personSelecter = new javax.swing.JComboBox<>();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel9 = new javax.swing.JLabel();
-        LastNameDisplay = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        AgeDisplay = new javax.swing.JTextField();
-        jLabel26 = new javax.swing.JLabel();
+        lblAgeCounselorForm = new javax.swing.JLabel();
+        txtAgeCounselorForm = new javax.swing.JTextField();
+        lblTenureCounselorForm = new javax.swing.JLabel();
+        txtTenureCounselorForm = new javax.swing.JTextField();
+        txtSalaryCounselorForm = new javax.swing.JTextField();
+        lblSalaryCounselorForm = new javax.swing.JLabel();
+        lblStudentsCounselorForm = new javax.swing.JLabel();
+        txtStudentsCounselorForm = new javax.swing.JTextField();
+        btnAddCounselorCounselorForm = new javax.swing.JButton();
+        tabIDLookup = new javax.swing.JPanel();
+        txtFirstNameIDLookup = new javax.swing.JTextField();
+        lblFirstNameIDLookup = new javax.swing.JLabel();
+        cboPersonSelectorIDLookup = new javax.swing.JComboBox<>();
+        radStudentsIDLookup = new javax.swing.JRadioButton();
+        radTeachersIDLookup = new javax.swing.JRadioButton();
+        lblLastNameIDLookup = new javax.swing.JLabel();
+        txtLastNameIDLookup = new javax.swing.JTextField();
+        lblIDLookup = new javax.swing.JLabel();
+        radCounselorsIDLookup = new javax.swing.JRadioButton();
+        txtAgeIDLookup = new javax.swing.JTextField();
+        lblAgeIDLookup = new javax.swing.JLabel();
+        lblCurYearAndSalaryIDLookup = new javax.swing.JLabel();
+        txtCurYearAndSalaryIDLookup = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        lblGradDateAndDepartmentAndStudentsIDLookup = new javax.swing.JLabel();
+        txtGradDateIDLookup = new javax.swing.JTextField();
+        lblMajorAndTenureIDLookup = new javax.swing.JLabel();
+        txtMajorIDLookup = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -127,498 +135,284 @@ public class GUI extends javax.swing.JFrame {
         setTitle("Employee DataBase");
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setToolTipText(null);
         jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jTabbedPane1.setFocusable(false);
         jTabbedPane1.setName(""); // NOI18N
 
-        jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabStudentForm.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabStudentForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel11.setText("First Name:");
+        lblFirstNameStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblFirstNameStudentForm.setText("First Name:");
+        tabStudentForm.add(lblFirstNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, 65, -1));
 
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel12.setText("Last Name:");
+        lblLastNameStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblLastNameStudentForm.setText("Last Name:");
+        tabStudentForm.add(lblLastNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 71, 65, -1));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        lblAgeStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblAgeStudentForm.setText("Age:");
+        tabStudentForm.add(lblAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 107, 65, -1));
+
+        lblGradDateStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblGradDateStudentForm.setText("Grad. Date:");
+        tabStudentForm.add(lblGradDateStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
+
+        lblCurrentYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblCurrentYearStudentForm.setText("Current Year:");
+        tabStudentForm.add(lblCurrentYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
+
+        lblMajorStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblMajorStudentForm.setText("Major:");
+        tabStudentForm.add(lblMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 71, 80, -1));
+        tabStudentForm.add(txtFirstNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 80, -1));
+        tabStudentForm.add(txtLastNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 66, 80, -1));
+        tabStudentForm.add(txtAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 102, 80, -1));
+        tabStudentForm.add(txtGradDateStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
+        tabStudentForm.add(txtMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
+
+        lblStudentForm.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
+        lblStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblStudentForm.setText("Student Form");
+        tabStudentForm.add(lblStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 511, 18));
+
+        btnAddStudentStudentForm.setText("Add Student");
+        tabStudentForm.add(btnAddStudentStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
+
+        cboCurYearStudentForm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Freshman", "Sophmore", "Junior", "Senior" }));
+        tabStudentForm.add(cboCurYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 100, -1));
+
+        jTabbedPane1.addTab("Student Form", null, tabStudentForm, "New Student Form");
+
+        tabTeacherForm.setToolTipText(null);
+        tabTeacherForm.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabTeacherForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAddTeacherTeacherForm.setText("Add Teacher");
+        btnAddTeacherTeacherForm.setToolTipText("Creates new Teacher");
+        btnAddTeacherTeacherForm.setBorderPainted(false);
+        btnAddTeacherTeacherForm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddTeacherTeacherForm.setName("btnAddTeacherTeacherForm"); // NOI18N
+        btnAddTeacherTeacherForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                btnAddTeacherTeacherFormActionPerformed(evt);
             }
         });
+        tabTeacherForm.add(btnAddTeacherTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
+        tabTeacherForm.add(txtFirstNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 80, -1));
+        tabTeacherForm.add(txtLastNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 66, 80, -1));
+        tabTeacherForm.add(txtAgeTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 102, 80, -1));
+
+        lblFirstNameTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblFirstNameTeacherForm.setText("First Name:");
+        tabTeacherForm.add(lblFirstNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, 65, -1));
+
+        lblLastNameTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblLastNameTeacherForm.setText("Last Name:");
+        tabTeacherForm.add(lblLastNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 71, 65, -1));
+
+        lblAgeTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblAgeTeacherForm.setText("Age:");
+        tabTeacherForm.add(lblAgeTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 107, 65, -1));
+
+        lblTeacherForm.setBackground(new java.awt.Color(255, 255, 255));
+        lblTeacherForm.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
+        lblTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTeacherForm.setText("Teacher Form");
+        tabTeacherForm.add(lblTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 511, 18));
+
+        lblTenureTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblTenureTeacherForm.setText("Tenure: ");
+        tabTeacherForm.add(lblTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
+
+        lblSalaryTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblSalaryTeacherForm.setText("Salary: ");
+        lblSalaryTeacherForm.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        tabTeacherForm.add(lblSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 71, 80, -1));
+
+        lblDepartmentTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblDepartmentTeacherForm.setText("Department: ");
+        tabTeacherForm.add(lblDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
+        tabTeacherForm.add(txtTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
+        tabTeacherForm.add(txtDepartmnetTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
+
+        txtSalaryTeacherForm.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("¤#,##0.##"))));
+        tabTeacherForm.add(txtSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
+
+        jTabbedPane1.addTab("Teacher Form", null, tabTeacherForm, "New Teacher Form");
+
+        tabCounselorForm.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabCounselorForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblFirstNameCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblFirstNameCounselorForm.setText("First Name:");
+        tabCounselorForm.add(lblFirstNameCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 35, 65, -1));
+
+        lblLastNameCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblLastNameCounselorForm.setText("Last Name:");
+        tabCounselorForm.add(lblLastNameCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 71, 65, -1));
+        tabCounselorForm.add(txtFirstNameCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 80, -1));
+        tabCounselorForm.add(txtLastNameCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 66, 80, -1));
 
         jLabel13.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("New Counselor Form");
+        jLabel13.setText("Counselor Form");
+        tabCounselorForm.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 511, 18));
 
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel14.setText("Age:");
+        lblAgeCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblAgeCounselorForm.setText("Age:");
+        tabCounselorForm.add(lblAgeCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 107, 65, -1));
+        tabCounselorForm.add(txtAgeCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 102, 80, -1));
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        lblTenureCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblTenureCounselorForm.setText("Tenure:");
+        tabCounselorForm.add(lblTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 35, 80, -1));
+        tabCounselorForm.add(txtTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
+        tabCounselorForm.add(txtSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
+
+        lblSalaryCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblSalaryCounselorForm.setText("Salary:");
+        tabCounselorForm.add(lblSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 71, 80, -1));
+
+        lblStudentsCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblStudentsCounselorForm.setText("Students:");
+        tabCounselorForm.add(lblStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
+        tabCounselorForm.add(txtStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
+
+        btnAddCounselorCounselorForm.setText("Add Counselor");
+        btnAddCounselorCounselorForm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                btnAddCounselorCounselorFormActionPerformed(evt);
             }
         });
+        tabCounselorForm.add(btnAddCounselorCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
 
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel15.setText("Tenure:");
+        jTabbedPane1.addTab("Counselor Form", null, tabCounselorForm, "New Counselor Form");
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
+        tabIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tabIDLookup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
+        txtFirstNameIDLookup.setEditable(false);
+        txtFirstNameIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtFirstNameIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtFirstNameIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtFirstNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 72, -1));
 
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel16.setText("Salary:");
+        lblFirstNameIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblFirstNameIDLookup.setText("First Name:");
+        tabIDLookup.add(lblFirstNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 42, 90, -1));
 
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel17.setText("Department:");
-
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel18.setText("Students");
-
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Add Counselor");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(180, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(207, 207, 207))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(5, 5, 5)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField1))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel15))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1, 1, 1)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
-            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel11)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel18)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Counselor Form", null, jPanel3, "New Counselor Form");
-
-        jPanel1.setToolTipText(null);
-        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        createTeacher.setBackground(new java.awt.Color(204, 204, 204));
-        createTeacher.setText("Add Teacher");
-        createTeacher.setToolTipText("Creates new Employee");
-        createTeacher.setBorderPainted(false);
-        createTeacher.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        createTeacher.setName("createTeacher"); // NOI18N
-        createTeacher.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                createTeacherActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel2.setText("First Name:");
-
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel3.setText("Last Name:");
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel4.setText("Age:");
-
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("New Teacher Form");
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel6.setText("Tenure: ");
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel7.setText("Salary: ");
-        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel8.setText("Department: ");
-
-        teacherDepartment.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                teacherDepartmentActionPerformed(evt);
-            }
-        });
-
-        teacherSalary.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("¤#,##0.##"))));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(5, 5, 5)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(teacherAge)
-                            .addComponent(TeacherLast)
-                            .addComponent(TeacherFirst, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(84, 84, 84)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8))
-                        .addGap(5, 5, 5)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(teacherSalary, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(teacherTenure, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(teacherDepartment, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(createTeacher)))
-                .addContainerGap(92, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TeacherFirst, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TeacherLast, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(teacherAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(teacherTenure, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(teacherSalary, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(teacherDepartment, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8))))
-                .addGap(18, 18, 18)
-                .addComponent(createTeacher)
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Teacher Form", null, jPanel1, "New Teacher Form");
-
-        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel19.setText("First Name:");
-
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel20.setText("Last Name:");
-
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel21.setText("Age:");
-
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel22.setText("Grad. Date:");
-
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel23.setText("Current Year:");
-
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel24.setText("Major:");
-
-        jLabel25.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
-        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("Student Form");
-
-        jButton2.setText("Add Student");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel19))
-                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(84, 84, 84)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                            .addComponent(jTextField12)
-                            .addComponent(jTextField13)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(180, 180, 180)
-                        .addComponent(jButton2)))
-                .addContainerGap(87, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel22)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel20)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel24)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(16, 16, 16)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel21)
-                            .addComponent(jLabel23)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(34, 34, 34))
-        );
-
-        jTabbedPane1.addTab("Student Form", null, jPanel4, "New Student Form");
-
-        jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        FirstNameDisplay.setEditable(false);
-        FirstNameDisplay.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        FirstNameDisplay.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        FirstNameDisplay.setRequestFocusEnabled(false);
-
-        jLabel1.setText("First Name:");
-
-        personSelecter.addItemListener(new java.awt.event.ItemListener() {
+        cboPersonSelectorIDLookup.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                personSelecterItemStateChanged(evt);
+                cboPersonSelectorIDLookupItemStateChanged(evt);
             }
         });
-        personSelecter.addActionListener(new java.awt.event.ActionListener() {
+        tabIDLookup.add(cboPersonSelectorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 79, -1));
+
+        buttonGroup1.add(radStudentsIDLookup);
+        radStudentsIDLookup.setText("Students");
+        radStudentsIDLookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                personSelecterActionPerformed(evt);
+                radStudentsIDLookupActionPerformed(evt);
             }
         });
+        tabIDLookup.add(radStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 55, 80, -1));
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("Students");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(radTeachersIDLookup);
+        radTeachersIDLookup.setText("Teachers");
+        radTeachersIDLookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                radTeachersIDLookupActionPerformed(evt);
             }
         });
+        tabIDLookup.add(radTeachersIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 75, 79, -1));
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("Teachers");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        lblLastNameIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblLastNameIDLookup.setText("Last Name:");
+        tabIDLookup.add(lblLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 42, 90, -1));
+
+        txtLastNameIDLookup.setEditable(false);
+        txtLastNameIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtLastNameIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        tabIDLookup.add(txtLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 39, 73, -1));
+
+        lblIDLookup.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
+        lblIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblIDLookup.setText("ID Lookup");
+        tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 485, 17));
+
+        buttonGroup1.add(radCounselorsIDLookup);
+        radCounselorsIDLookup.setSelected(true);
+        radCounselorsIDLookup.setText("Counselors");
+        radCounselorsIDLookup.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                radCounselorsIDLookupActionPerformed(evt);
             }
         });
+        tabIDLookup.add(radCounselorsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 35, -1, -1));
 
-        jLabel9.setText("Last Name:");
+        txtAgeIDLookup.setEditable(false);
+        txtAgeIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtAgeIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtAgeIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtAgeIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 72, -1));
 
-        LastNameDisplay.setEditable(false);
-        LastNameDisplay.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        LastNameDisplay.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        lblAgeIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblAgeIDLookup.setText("Age:");
+        tabIDLookup.add(lblAgeIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 84, 70, -1));
 
-        jLabel10.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("ID Lookup");
+        lblCurYearAndSalaryIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblCurYearAndSalaryIDLookup.setText("Salary:");
+        tabIDLookup.add(lblCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 84, 90, -1));
 
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setSelected(true);
-        jRadioButton3.setText("Counselors");
+        txtCurYearAndSalaryIDLookup.setEditable(false);
+        txtCurYearAndSalaryIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtCurYearAndSalaryIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtCurYearAndSalaryIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 80, 72, -1));
+        tabIDLookup.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, -1, -1));
 
-        AgeDisplay.setEditable(false);
-        AgeDisplay.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        AgeDisplay.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        AgeDisplay.setRequestFocusEnabled(false);
-        AgeDisplay.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AgeDisplayActionPerformed(evt);
-            }
-        });
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        tabIDLookup.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 31, 60, 110));
+        tabIDLookup.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 110, 10));
+        tabIDLookup.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 100, 10));
 
-        jLabel26.setText("Age:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
+        tabIDLookup.add(lblGradDateAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(-7, 124, 100, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel26))
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(FirstNameDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(49, 49, 49)
-                                .addComponent(jLabel9)
-                                .addGap(10, 10, 10)
-                                .addComponent(LastNameDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(AgeDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jRadioButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jRadioButton1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(personSelecter, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(35, 35, 35)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(FirstNameDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LastNameDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel9))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel26)
-                        .addComponent(AgeDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(personSelecter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
+        txtGradDateIDLookup.setEditable(false);
+        txtGradDateIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtGradDateIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtGradDateIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtGradDateIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 72, -1));
 
-        jTabbedPane1.addTab("ID Lookup", null, jPanel2, "Lookup Person By ID");
+        lblMajorAndTenureIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        lblMajorAndTenureIDLookup.setText("Tenure:");
+        tabIDLookup.add(lblMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 124, 50, -1));
+
+        txtMajorIDLookup.setEditable(false);
+        txtMajorIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtMajorIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtMajorIDLookup.setRequestFocusEnabled(false);
+        tabIDLookup.add(txtMajorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 120, 72, -1));
+
+        jTabbedPane1.addTab("ID Lookup", null, tabIDLookup, "Lookup Person By ID");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 489, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 516, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1)
+                .addGap(0, 0, 0))
         );
 
         jTabbedPane1.getAccessibleContext().setAccessibleName("Tabs");
@@ -626,55 +420,61 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void personSelecterItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_personSelecterItemStateChanged
+    private void cboPersonSelectorIDLookupItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboPersonSelectorIDLookupItemStateChanged
         if(selectedButton.equals("Students")){
-            if(!(personSelecter.getItemCount()==0)){
-            Student displayPerson = DataBase.StudentIDLookUp(personSelecter.getSelectedItem().toString());
-            FirstNameDisplay.setText(displayPerson.getFirstName());
-            LastNameDisplay.setText(displayPerson.getFirstName());
+            if(!(cboPersonSelectorIDLookup.getItemCount()==0)){
+            Student displayPerson = DataBase.StudentIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+            txtLastNameIDLookup.setText(displayPerson.getFirstName());
             }
         }
         else if(selectedButton.equals("Teachers")){
-            Teacher displayPerson = DataBase.TeacherIDLookUp(personSelecter.getSelectedItem().toString());
+            Teacher displayPerson = DataBase.TeacherIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
             if(displayPerson.equals(null)){
                 return;
             }
-            FirstNameDisplay.setText(displayPerson.getFirstName());
-            LastNameDisplay.setText(displayPerson.getLastName());
+            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+            txtLastNameIDLookup.setText(displayPerson.getLastName());
         }
         else if(selectedButton.equals("Counselors")){
-            Counselor displayPerson = DataBase.CounselorIDLookUp(personSelecter.getSelectedItem().toString());
+            Counselor displayPerson = DataBase.CounselorIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
             if(displayPerson.equals(null)){
                 return;
             }
-            FirstNameDisplay.setText(displayPerson.getFirstName());
-            LastNameDisplay.setText(displayPerson.getLastName());
+            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+            txtLastNameIDLookup.setText(displayPerson.getLastName());
         } else {
             System.err.print("Problem on line 382");
             return;
         }
         //FirstNameDisplay.setText(displayPerson);
         
-    }//GEN-LAST:event_personSelecterItemStateChanged
+    }//GEN-LAST:event_cboPersonSelectorIDLookupItemStateChanged
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void radStudentsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radStudentsIDLookupActionPerformed
         selectedButton = "Students";
-        personSelecter.removeAllItems();
+        lblCurYearAndSalaryIDLookup.setText("Current Year:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Graduation Date:");
+        lblMajorAndTenureIDLookup.setText("Major:");
+        cboPersonSelectorIDLookup.removeAllItems();
         for(int i = 0; i < DataBase.GetStudentList().size(); i ++){
-            personSelecter.addItem(DataBase.GetStudentList().get(i).getID());
+            cboPersonSelectorIDLookup.addItem(DataBase.GetStudentList().get(i).getID());
         }
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_radStudentsIDLookupActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void radTeachersIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radTeachersIDLookupActionPerformed
         selectedButton = "Teachers";
-        personSelecter.removeAllItems();
+        lblCurYearAndSalaryIDLookup.setText("Salary:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Department:");
+        lblMajorAndTenureIDLookup.setText("Tenure:");
+        cboPersonSelectorIDLookup.removeAllItems();
         for(int i = 0; i < DataBase.GetTeacherList().size(); i++){
             System.out.println(DataBase.GetTeacherList().get(i).getID());
-            personSelecter.addItem(DataBase.GetTeacherList().get(i).getID());
+            cboPersonSelectorIDLookup.addItem(DataBase.GetTeacherList().get(i).getID());
         }
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+    }//GEN-LAST:event_radTeachersIDLookupActionPerformed
     
-    private void ErrorPopUp(String message){
+    public void ErrorPopUp(String message){
         javax.swing.JOptionPane.showMessageDialog(null, 
                  "Programer: Jacob Bennett\n"
                          + "Year: 2020\n"
@@ -683,52 +483,36 @@ public class GUI extends javax.swing.JFrame {
                          + "Benne238@purdue.edu");                                          
     }
     
-    private void personSelecterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personSelecterActionPerformed
-        
-    }//GEN-LAST:event_personSelecterActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void AgeDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgeDisplayActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AgeDisplayActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void teacherDepartmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherDepartmentActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_teacherDepartmentActionPerformed
-
-    private void createTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createTeacherActionPerformed
-        DataBase.AddTeacher(new Teacher(TeacherFirst.getText(), TeacherLast.getText(), 48, 2.00, 0, "CIT"));
+    private void btnAddTeacherTeacherFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddTeacherTeacherFormActionPerformed
+        DataBase.AddTeacher(new Teacher(txtFirstNameTeacherForm.getText(), txtLastNameTeacherForm.getText(), 48, 2.00, 0, "CIT"));
         //personSelecter.addItem()
         //System.out.println(George.getDepartment());
         //System.out.println(George.getID());
         //DisplayWindow.setText("successfully added person: " + George.getFirstName() + " " + George.getLastName());
         if(selectedButton.equals("Teachers")){
             Teacher newTeacher = DataBase.GetTeacherList().get(DataBase.GetTeacherList().size() - 1);
-            personSelecter.addItem(newTeacher.getID());
+            cboPersonSelectorIDLookup.addItem(newTeacher.getID());
             //FirstNameDisplay.setText(newTeacher.getFirstName());
             //LastNameDisplay.setText(newTeacher.getLastName());
 
         }
-    }//GEN-LAST:event_createTeacherActionPerformed
+    }//GEN-LAST:event_btnAddTeacherTeacherFormActionPerformed
+
+    private void radCounselorsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radCounselorsIDLookupActionPerformed
+        selectedButton = "Counselors";
+        lblCurYearAndSalaryIDLookup.setText("Salary:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
+        lblMajorAndTenureIDLookup.setText("Tenure:");
+        cboPersonSelectorIDLookup.removeAllItems();
+        for(int i = 0; i < DataBase.GetCounselorList().size(); i++){
+            System.out.println(DataBase.GetCounselorList().get(i).getID());
+            cboPersonSelectorIDLookup.addItem(DataBase.GetCounselorList().get(i).getID());
+        }
+    }//GEN-LAST:event_radCounselorsIDLookupActionPerformed
+
+    private void btnAddCounselorCounselorFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCounselorCounselorFormActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAddCounselorCounselorFormActionPerformed
 
     /**
      * @param args the command line arguments
@@ -766,75 +550,82 @@ public class GUI extends javax.swing.JFrame {
             }
         });
      
-    
      //TeacherIDs.add("0");   
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField AgeDisplay;
-    private javax.swing.JTextField FirstNameDisplay;
-    private javax.swing.JTextField LastNameDisplay;
-    private javax.swing.JTextField TeacherFirst;
-    private javax.swing.JTextField TeacherLast;
+    private javax.swing.JButton btnAddCounselorCounselorForm;
+    private javax.swing.JButton btnAddStudentStudentForm;
+    private javax.swing.JButton btnAddTeacherTeacherForm;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton createTeacher;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> cboCurYearStudentForm;
+    private javax.swing.JComboBox<String> cboPersonSelectorIDLookup;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JComboBox<String> personSelecter;
-    private javax.swing.JTextField teacherAge;
-    private javax.swing.JTextField teacherDepartment;
-    private javax.swing.JFormattedTextField teacherSalary;
-    private javax.swing.JTextField teacherTenure;
+    private javax.swing.JLabel lblAgeCounselorForm;
+    private javax.swing.JLabel lblAgeIDLookup;
+    private javax.swing.JLabel lblAgeStudentForm;
+    private javax.swing.JLabel lblAgeTeacherForm;
+    private javax.swing.JLabel lblCurYearAndSalaryIDLookup;
+    private javax.swing.JLabel lblCurrentYearStudentForm;
+    private javax.swing.JLabel lblDepartmentTeacherForm;
+    private javax.swing.JLabel lblFirstNameCounselorForm;
+    private javax.swing.JLabel lblFirstNameIDLookup;
+    private javax.swing.JLabel lblFirstNameStudentForm;
+    private javax.swing.JLabel lblFirstNameTeacherForm;
+    private javax.swing.JLabel lblGradDateAndDepartmentAndStudentsIDLookup;
+    private javax.swing.JLabel lblGradDateStudentForm;
+    private javax.swing.JLabel lblIDLookup;
+    private javax.swing.JLabel lblLastNameCounselorForm;
+    private javax.swing.JLabel lblLastNameIDLookup;
+    private javax.swing.JLabel lblLastNameStudentForm;
+    private javax.swing.JLabel lblLastNameTeacherForm;
+    private javax.swing.JLabel lblMajorAndTenureIDLookup;
+    private javax.swing.JLabel lblMajorStudentForm;
+    private javax.swing.JLabel lblSalaryCounselorForm;
+    private javax.swing.JLabel lblSalaryTeacherForm;
+    private javax.swing.JLabel lblStudentForm;
+    private javax.swing.JLabel lblStudentsCounselorForm;
+    private javax.swing.JLabel lblTeacherForm;
+    private javax.swing.JLabel lblTenureCounselorForm;
+    private javax.swing.JLabel lblTenureTeacherForm;
+    private javax.swing.JRadioButton radCounselorsIDLookup;
+    private javax.swing.JRadioButton radStudentsIDLookup;
+    private javax.swing.JRadioButton radTeachersIDLookup;
+    private javax.swing.JPanel tabCounselorForm;
+    private javax.swing.JPanel tabIDLookup;
+    private javax.swing.JPanel tabStudentForm;
+    private javax.swing.JPanel tabTeacherForm;
+    private javax.swing.JTextField txtAgeCounselorForm;
+    private javax.swing.JTextField txtAgeIDLookup;
+    private javax.swing.JTextField txtAgeStudentForm;
+    private javax.swing.JTextField txtAgeTeacherForm;
+    private javax.swing.JTextField txtCurYearAndSalaryIDLookup;
+    private javax.swing.JTextField txtDepartmnetTeacherForm;
+    private javax.swing.JTextField txtFirstNameCounselorForm;
+    private javax.swing.JTextField txtFirstNameIDLookup;
+    private javax.swing.JTextField txtFirstNameStudentForm;
+    private javax.swing.JTextField txtFirstNameTeacherForm;
+    private javax.swing.JTextField txtGradDateIDLookup;
+    private javax.swing.JTextField txtGradDateStudentForm;
+    private javax.swing.JTextField txtLastNameCounselorForm;
+    private javax.swing.JTextField txtLastNameIDLookup;
+    private javax.swing.JTextField txtLastNameStudentForm;
+    private javax.swing.JTextField txtLastNameTeacherForm;
+    private javax.swing.JTextField txtMajorIDLookup;
+    private javax.swing.JTextField txtMajorStudentForm;
+    private javax.swing.JTextField txtSalaryCounselorForm;
+    private javax.swing.JFormattedTextField txtSalaryTeacherForm;
+    private javax.swing.JTextField txtStudentsCounselorForm;
+    private javax.swing.JTextField txtTenureCounselorForm;
+    private javax.swing.JTextField txtTenureTeacherForm;
     // End of variables declaration//GEN-END:variables
 }
