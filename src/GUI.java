@@ -45,7 +45,7 @@ public class GUI extends javax.swing.JFrame {
         txtFirstNameStudentForm = new javax.swing.JTextField();
         txtLastNameStudentForm = new javax.swing.JTextField();
         txtAgeStudentForm = new javax.swing.JTextField();
-        txtGradDateStudentForm = new javax.swing.JTextField();
+        txtGradYearStudentForm = new javax.swing.JTextField();
         txtMajorStudentForm = new javax.swing.JTextField();
         lblStudentForm = new javax.swing.JLabel();
         btnAddStudentStudentForm = new javax.swing.JButton();
@@ -169,7 +169,7 @@ public class GUI extends javax.swing.JFrame {
         tabStudentForm.add(txtFirstNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 30, 80, -1));
         tabStudentForm.add(txtLastNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 66, 80, -1));
         tabStudentForm.add(txtAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 102, 80, -1));
-        tabStudentForm.add(txtGradDateStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
+        tabStudentForm.add(txtGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 30, 80, -1));
         tabStudentForm.add(txtMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 66, 80, -1));
 
         lblStudentForm.setFont(new java.awt.Font("Courier New", 0, 16)); // NOI18N
@@ -186,6 +186,7 @@ public class GUI extends javax.swing.JFrame {
         tabStudentForm.add(btnAddStudentStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
 
         cboCurYearStudentForm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Freshman", "Sophmore", "Junior", "Senior" }));
+        cboCurYearStudentForm.setSelectedIndex(-1);
         tabStudentForm.add(cboCurYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 100, -1));
 
         jTabbedPane1.addTab("Student Form", null, tabStudentForm, "New Student Form");
@@ -279,7 +280,7 @@ public class GUI extends javax.swing.JFrame {
         tabCounselorForm.add(lblSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 71, 80, -1));
 
         lblStudentsCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblStudentsCounselorForm.setText("Students:");
+        lblStudentsCounselorForm.setText("# of Students:");
         tabCounselorForm.add(lblStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 107, 80, -1));
         tabCounselorForm.add(txtStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 102, 80, -1));
 
@@ -382,7 +383,7 @@ public class GUI extends javax.swing.JFrame {
         tabIDLookup.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 100, 10));
 
         lblGradDateAndDepartmentAndStudentsIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("# of Students:");
         tabIDLookup.add(lblGradDateAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(-7, 124, 100, -1));
 
         txtGradYearAndDepartmentAndStudentsIDLookup.setEditable(false);
@@ -424,64 +425,59 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cboPersonSelectorIDLookupItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboPersonSelectorIDLookupItemStateChanged
-        if(selectedButton.equals("Students")){
-            
-            if(cboPersonSelectorIDLookup.getItemCount()!=0){
-            Student displayPerson = DataBase.StudentIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
-            txtFirstNameIDLookup.setText(displayPerson.getFirstName());
-            txtLastNameIDLookup.setText(displayPerson.getFirstName());
-            txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
-            txtMajorAndTenureIDLookup.setText(displayPerson.getMajor());
-            txtGradYearAndDepartmentAndStudentsIDLookup.setText(displayPerson.getGradDate());
-            txtCurYearAndSalaryIDLookup.setText(displayPerson.getCurrentYear());
+        System.out.println("" + cboPersonSelectorIDLookup.getSelectedIndex());
+        if(cboPersonSelectorIDLookup.getSelectedIndex() != -1){
+            System.out.println("its recognizing this!");
+            switch (selectedButton) {
+                
+                case "Students":
+                    if(cboPersonSelectorIDLookup.getItemCount()!=0){
+                        
+                        Student displayPerson = DataBase.StudentIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+                        txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+                        txtLastNameIDLookup.setText(displayPerson.getLastName());
+                        txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+                        txtMajorAndTenureIDLookup.setText(displayPerson.getMajor());
+                        txtGradYearAndDepartmentAndStudentsIDLookup.setText(Integer.toString(displayPerson.getGradDate()));
+                        txtCurYearAndSalaryIDLookup.setText(displayPerson.getCurrentYear());
+                        
+                    }   break;
+                    
+                case "Teachers":
+                    if(cboPersonSelectorIDLookup.getItemCount() != 0){
+                        
+                        Teacher displayPerson = DataBase.TeacherIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+                        txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+                        txtLastNameIDLookup.setText(displayPerson.getLastName());
+                        txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+                        txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
+                        txtGradYearAndDepartmentAndStudentsIDLookup.setText(displayPerson.getDepartment());
+                        txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
+                        
+                    }   break;
+                case "Counselors":
+                    
+                    if(cboPersonSelectorIDLookup.getItemCount() != 0){
+                        
+                        Counselor displayPerson = DataBase.CounselorIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
+                        txtFirstNameIDLookup.setText(displayPerson.getFirstName());
+                        txtLastNameIDLookup.setText(displayPerson.getLastName());
+                        txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
+                        txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
+                        txtGradYearAndDepartmentAndStudentsIDLookup.setText(Integer.toString(displayPerson.getNumberOfStudents()));
+                        txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
+                        
+                    }   break;
+                    
+                default:
+                    System.err.print("Problem on line 382");
+                    break;
             }
-            
         }
-        else if(selectedButton.equals("Teachers")){
-            
-            if(cboPersonSelectorIDLookup.getItemCount() != 0){
-                Teacher displayPerson = DataBase.TeacherIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
-                txtFirstNameIDLookup.setText(displayPerson.getFirstName());
-                txtLastNameIDLookup.setText(displayPerson.getLastName());
-                txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
-                txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
-                txtGradYearAndDepartmentAndStudentsIDLookup.setText(displayPerson.getDepartment());
-                txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
-            }
-            
-        }
-        
-        else if(selectedButton.equals("Counselors")){
-            
-            if(cboPersonSelectorIDLookup.getItemCount() != 0){
-                Counselor displayPerson = DataBase.CounselorIDLookUp(cboPersonSelectorIDLookup.getSelectedItem().toString());
-                txtFirstNameIDLookup.setText(displayPerson.getFirstName());
-                txtLastNameIDLookup.setText(displayPerson.getLastName());
-                txtAgeIDLookup.setText(Integer.toString(displayPerson.getAge()));
-                txtMajorAndTenureIDLookup.setText(Integer.toString(displayPerson.getTenure()));
-                txtGradYearAndDepartmentAndStudentsIDLookup.setText(Integer.toString(displayPerson.getNumberOfStudents()));
-                txtCurYearAndSalaryIDLookup.setText("$" + Double.toString(displayPerson.getSalary()));
-            }
-            
-        } 
-        
-        else {
-            System.err.print("Problem on line 382");
-        }
-        //FirstNameDisplay.setText(displayPerson);
-        
     }//GEN-LAST:event_cboPersonSelectorIDLookupItemStateChanged
 
     private void radStudentsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radStudentsIDLookupActionPerformed
         selectedButton = "Students";
-        
-        //Clears all output fields
-        txtFirstNameIDLookup.setText("");
-        txtLastNameIDLookup.setText("");
-        txtAgeIDLookup.setText("");
-        txtMajorAndTenureIDLookup.setText("");
-        txtCurYearAndSalaryIDLookup.setText("");
-        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
         
         //Sets lables for coresponding Teacher Fields
         lblCurYearAndSalaryIDLookup.setText("Current Year:");
@@ -495,10 +491,9 @@ public class GUI extends javax.swing.JFrame {
         for(int i = 0; i < DataBase.GetStudentList().size(); i ++){
             cboPersonSelectorIDLookup.addItem(DataBase.GetStudentList().get(i).getID());
         }
-    }//GEN-LAST:event_radStudentsIDLookupActionPerformed
-
-    private void radTeachersIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radTeachersIDLookupActionPerformed
-        selectedButton = "Teachers";
+        
+        //Initializes the Combobox to -1
+        cboPersonSelectorIDLookup.setSelectedIndex(-1);
         
         //Clears all output fields
         txtFirstNameIDLookup.setText("");
@@ -507,22 +502,36 @@ public class GUI extends javax.swing.JFrame {
         txtMajorAndTenureIDLookup.setText("");
         txtCurYearAndSalaryIDLookup.setText("");
         txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
+    }//GEN-LAST:event_radStudentsIDLookupActionPerformed
+
+    private void radTeachersIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radTeachersIDLookupActionPerformed
+        selectedButton = "Teachers";
         
         //Sets lables for coresponding Teacher Fields
         lblCurYearAndSalaryIDLookup.setText("Salary:");
         lblGradDateAndDepartmentAndStudentsIDLookup.setText("Department:");
         lblMajorAndTenureIDLookup.setText("Tenure:");
-        System.out.println(cboPersonSelectorIDLookup.getItemCount());
         
         //Removes all items in the combobox
         cboPersonSelectorIDLookup.removeAllItems();
         
+        
+        
         //Adds all the contents of teacherlist ids to the combobox
         for(int i = 0; i < DataBase.GetTeacherList().size(); i++){
-            System.out.println(DataBase.GetTeacherList().get(i).getID());
             cboPersonSelectorIDLookup.addItem(DataBase.GetTeacherList().get(i).getID());
+            
         }
+        //Initializes the Combobox to -1
+        cboPersonSelectorIDLookup.setSelectedIndex(-1);
         
+        //Clears all output fields
+        txtFirstNameIDLookup.setText("");
+        txtLastNameIDLookup.setText("");
+        txtAgeIDLookup.setText("");
+        txtMajorAndTenureIDLookup.setText("");
+        txtCurYearAndSalaryIDLookup.setText("");
+        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
     }//GEN-LAST:event_radTeachersIDLookupActionPerformed
     
     public void ErrorPopUp(String message){
@@ -558,17 +567,9 @@ public class GUI extends javax.swing.JFrame {
     private void radCounselorsIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radCounselorsIDLookupActionPerformed
         selectedButton = "Counselors";
         
-        //Clears all output fields
-        txtFirstNameIDLookup.setText("");
-        txtLastNameIDLookup.setText("");
-        txtAgeIDLookup.setText("");
-        txtMajorAndTenureIDLookup.setText("");
-        txtCurYearAndSalaryIDLookup.setText("");
-        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
-        
         //Sets lables for coresponding Counselor Fields
         lblCurYearAndSalaryIDLookup.setText("Salary:");
-        lblGradDateAndDepartmentAndStudentsIDLookup.setText("Students:");
+        lblGradDateAndDepartmentAndStudentsIDLookup.setText("# of Students:");
         lblMajorAndTenureIDLookup.setText("Tenure:");
         
         //Removes all items in the combobox
@@ -576,10 +577,19 @@ public class GUI extends javax.swing.JFrame {
         
         //Adds all the contents of counelorlist ids to the combobox
         for(int i = 0; i < DataBase.GetCounselorList().size(); i++){
-            System.out.println(DataBase.GetCounselorList().get(i).getID());
             cboPersonSelectorIDLookup.addItem(DataBase.GetCounselorList().get(i).getID());
         }
         
+        //Initializes the Combobox to -1
+        cboPersonSelectorIDLookup.setSelectedIndex(-1);
+        
+        //Clears all output fields
+        txtFirstNameIDLookup.setText("");
+        txtLastNameIDLookup.setText("");
+        txtAgeIDLookup.setText("");
+        txtMajorAndTenureIDLookup.setText("");
+        txtCurYearAndSalaryIDLookup.setText("");
+        txtGradYearAndDepartmentAndStudentsIDLookup.setText("");
     }//GEN-LAST:event_radCounselorsIDLookupActionPerformed
 
     private void btnAddCounselorCounselorFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCounselorCounselorFormActionPerformed
@@ -608,7 +618,29 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddCounselorCounselorFormActionPerformed
 
     private void btnAddStudentStudentFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddStudentStudentFormActionPerformed
-        // TODO add your handling code here:
+        DataBase.AddStudent(new Student(
+                txtFirstNameStudentForm.getText(), //Gets First Name from form
+                txtLastNameStudentForm.getText(), //Gets Last Name from form
+                Integer.parseInt(txtAgeStudentForm.getText()), //Gets and Parses Age into an int from form
+                cboCurYearStudentForm.getSelectedItem().toString(),  //Gets current year from form
+                Integer.parseInt(txtGradYearStudentForm.getText()), //Gets and Parses Grad. Year into an int from form
+                txtMajorStudentForm.getText()  //Gets Major from form
+        ));
+        
+        //Clears New Student Form Inputs
+        txtFirstNameStudentForm.setText("");
+        txtLastNameStudentForm.setText("");
+        txtAgeStudentForm.setText("");
+        txtMajorStudentForm.setText("");
+        txtGradYearStudentForm.setText("");
+        cboCurYearStudentForm.setSelectedIndex(-1);
+        
+        //Immediatly Adds ID to the ID Lookup combo box if the students button is selected
+        if(selectedButton.equals("Students")){
+            Student newStudent = DataBase.GetStudentList().get(DataBase.GetStudentList().size() - 1);
+            cboPersonSelectorIDLookup.addItem(newStudent.getID());
+        }
+        
     }//GEN-LAST:event_btnAddStudentStudentFormActionPerformed
 
     /**
@@ -629,22 +661,16 @@ public class GUI extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(GUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        
+        //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GUI().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new GUI().setVisible(true);
         });
      
      //TeacherIDs.add("0");   
@@ -711,8 +737,8 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtFirstNameIDLookup;
     private javax.swing.JTextField txtFirstNameStudentForm;
     private javax.swing.JTextField txtFirstNameTeacherForm;
-    private javax.swing.JTextField txtGradDateStudentForm;
     private javax.swing.JTextField txtGradYearAndDepartmentAndStudentsIDLookup;
+    private javax.swing.JTextField txtGradYearStudentForm;
     private javax.swing.JTextField txtLastNameCounselorForm;
     private javax.swing.JTextField txtLastNameIDLookup;
     private javax.swing.JTextField txtLastNameStudentForm;

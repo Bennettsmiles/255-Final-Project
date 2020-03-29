@@ -23,7 +23,7 @@ public class Counselor extends Person{
             setTenure(tenure);
             setNumberOfStudents(numberOfStudents);
             //setDepartment(dept);
-            setID(cID);
+            setID();
             cID = updatetID(cID);
     }
     
@@ -83,7 +83,7 @@ public class Counselor extends Person{
         return this.realcID;
     }
     
-    private void setID(String ID){
+    private void setID(){
         this.realcID = cID;
     }
 
