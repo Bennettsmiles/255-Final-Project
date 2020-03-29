@@ -17,7 +17,7 @@ public class Counselor extends Person{
     private String realcID = "";
     private static String cID = "C0";
     
-    public Counselor(String first, String last, int age, double salary, int tenure, String dept, int numberOfStudents){
+    public Counselor(String first, String last, int age, double salary, int tenure, int numberOfStudents){
             super(first, last, age);
             setSalary(salary);
             setTenure(tenure);
@@ -97,7 +97,7 @@ public class Counselor extends Person{
     /**
      * @param numberOfStudents the numberOfStudents to set
      */
-    public void setNumberOfStudents(int numberOfStudents) {
+    private void setNumberOfStudents(int numberOfStudents) {
         this.numberOfStudents = numberOfStudents;
     }
     
