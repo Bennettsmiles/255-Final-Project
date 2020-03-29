@@ -20,7 +20,7 @@ public class Teacher extends Person{
             setSalary(salary);
             setTenure(tenure);
             setDepartment(dept);
-            setID(tID);
+            setID();
             tID = updatetID(tID);
     }
     
@@ -80,7 +80,7 @@ public class Teacher extends Person{
         return this.realtID;
     }
     
-    private void setID(String ID){
+    private void setID(){
         this.realtID = tID;
     }
     }
