@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Owner
+ * @authors: Jacob Bennett
  */
 public class Counselor extends Person{
     

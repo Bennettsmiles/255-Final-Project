@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Smiles
+ * @authors: Jacob Bennett
  */
 public class Teacher extends Person{
     private double salary = 0;
