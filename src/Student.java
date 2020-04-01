@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Smiles
+ * @authors: Jacob Bennett
  */
 
 public class Student extends Person{

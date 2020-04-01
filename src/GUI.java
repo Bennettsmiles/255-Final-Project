@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Jacob Bennett, Kyle Allen, Cole Harris
+ * @authors: Jacob Bennett
  */
 //import java.util.ArrayList;
 //import javax.swing.DefaultComboBoxModel;
@@ -425,9 +425,7 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cboPersonSelectorIDLookupItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboPersonSelectorIDLookupItemStateChanged
-        System.out.println("" + cboPersonSelectorIDLookup.getSelectedIndex());
         if(cboPersonSelectorIDLookup.getSelectedIndex() != -1){
-            System.out.println("its recognizing this!");
             switch (selectedButton) {
                 
                 case "Students":
