@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Smiles
+ * @authors: Jacob Bennett
  */
 public class DataBase {
     private static ArrayList<Student> studentList = new ArrayList<>();
