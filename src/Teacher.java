@@ -3,7 +3,7 @@
  * @authors: Jacob Bennett
  * Keith Kwan
  * Kyle Allen
- * 
+ * Kaveen Heenatigala
  * 
  * 
  * 
@@ -84,4 +84,4 @@ public class Teacher extends Person{
     private void setID(){
         this.realtID = tID;
     }
-    }
+}
