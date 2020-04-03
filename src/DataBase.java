@@ -1,16 +1,14 @@
+/**
+ * @authors: Jacob Bennett
+ * Keith Kwan
+ * Kyle Allen
+ * Eric Nguyen
+ * Kaveen Heenatigala
+ * 
+ */
 
 import java.util.ArrayList;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @authors: Jacob Bennett
- */
 public class DataBase {
     private static ArrayList<Student> studentList = new ArrayList<>();
     private static ArrayList<Teacher> teacherList = new ArrayList<>();

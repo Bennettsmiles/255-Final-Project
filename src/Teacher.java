@@ -1,13 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @authors: Jacob Bennett
+ * Keith Kwan
+ * Kyle Allen
+ * Eric Nguyen
+ * Kaveen Heenatigala
+ * 
  */
 
-/**
- *
- * @authors: Jacob Bennett
- */
 public class Teacher extends Person{
     private double salary = 0;
     private int tenure = 0;
