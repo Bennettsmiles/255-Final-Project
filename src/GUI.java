@@ -4,9 +4,6 @@
  * Keith Kwan
  * Kyle Allen
  * 
- * 
- * 
- * 
  */
 
 public class GUI extends javax.swing.JFrame {
