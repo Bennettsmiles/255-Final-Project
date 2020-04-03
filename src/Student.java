@@ -4,7 +4,7 @@
  * Kyle Allen
  * Eric Nguyen
  * Kaveen Heenatigala
- * Cole Harris
+ * 
  */
 
 public class Student extends Person{
