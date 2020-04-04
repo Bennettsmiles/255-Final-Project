@@ -1,12 +1,12 @@
 /**
- *
  * @authors: Jacob Bennett
- * 
- * 
- * 
- * 
- * 
+ * Keith Kwan
+ * Kyle Allen
+ * Eric Nguyen
+ * Kaveen Heenatigala
+ * Cole Harris
  */
+
 
 public class Teacher extends Person{
     private double salary = 0;

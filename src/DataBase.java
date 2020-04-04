@@ -1,11 +1,10 @@
 /**
- *
  * @authors: Jacob Bennett
- * 
- * 
- * 
- * 
- * 
+ * Keith Kwan
+ * Kyle Allen
+ * Eric Nguyen
+ * Kaveen Heenatigala
+ * Cole Harris
  */
 
 import java.util.ArrayList;

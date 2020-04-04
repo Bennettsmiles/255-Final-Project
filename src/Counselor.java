@@ -1,12 +1,12 @@
 /**
- *
  * @authors: Jacob Bennett
- * 
- * 
- * 
- * 
- * 
+ * Keith Kwan
+ * Kyle Allen
+ * Eric Nguyen
+ * Kaveen Heenatigala
+ * Cole Harris
  */
+
 
 public class Counselor extends Person{
     
