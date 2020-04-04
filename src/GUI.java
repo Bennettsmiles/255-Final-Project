@@ -745,5 +745,4 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtTenureCounselorForm;
     private javax.swing.JTextField txtTenureTeacherForm;
     // End of variables declaration//GEN-END:variables
-
 }
