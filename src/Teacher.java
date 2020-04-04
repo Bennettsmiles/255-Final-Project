@@ -4,8 +4,9 @@
  * Kyle Allen
  * Eric Nguyen
  * Kaveen Heenatigala
- * 
+ * Cole Harris
  */
+
 
 public class Teacher extends Person{
     private double salary = 0;
@@ -82,4 +83,4 @@ public class Teacher extends Person{
     private void setID(){
         this.realtID = tID;
     }
-    }
+}

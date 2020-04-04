@@ -4,8 +4,9 @@
  * Kyle Allen
  * Eric Nguyen
  * Kaveen Heenatigala
- * 
+ * Cole Harris
  */
+
 
 public abstract class Person{
     
@@ -60,4 +61,4 @@ public abstract class Person{
     private void setAge(int age) {
         this.age = age;
     }
-    }
+}
