@@ -120,8 +120,37 @@ public class GUI extends javax.swing.JFrame {
         txtC1Name = new javax.swing.JTextField();
         cboC1Dpt = new javax.swing.JComboBox<>();
         cboC1Prof = new javax.swing.JComboBox<>();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtC2Name = new javax.swing.JTextField();
+        cboC2Dpt = new javax.swing.JComboBox<>();
+        cboC2Prof = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txtC3Name = new javax.swing.JTextField();
+        cboC3Dpt = new javax.swing.JComboBox<>();
+        cboC3Prof = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        txtC4Name = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        txtC5Name = new javax.swing.JTextField();
+        cboC5Dpt = new javax.swing.JComboBox<>();
+        cboC4Dpt = new javax.swing.JComboBox<>();
+        cboC4Prof = new javax.swing.JComboBox<>();
+        cboC5Prof = new javax.swing.JComboBox<>();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        txtC6Name = new javax.swing.JTextField();
+        cboC6Dpt = new javax.swing.JComboBox<>();
+        cboC6Prof = new javax.swing.JComboBox<>();
         btnAddClasses = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -178,20 +207,20 @@ public class GUI extends javax.swing.JFrame {
 
         lblGradYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblGradYearStudentForm.setText("Grad. Year:");
-        tabStudentForm.add(lblGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 80, 20));
+        tabStudentForm.add(lblGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 80, 20));
 
         lblCurrentYearStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCurrentYearStudentForm.setText("Current Year:");
-        tabStudentForm.add(lblCurrentYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 80, 20));
+        tabStudentForm.add(lblCurrentYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 80, 20));
 
         lblMajorStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblMajorStudentForm.setText("Major:");
-        tabStudentForm.add(lblMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 80, 20));
+        tabStudentForm.add(lblMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 80, 20));
         tabStudentForm.add(txtFirstNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 100, -1));
         tabStudentForm.add(txtLastNameStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 100, -1));
         tabStudentForm.add(txtAgeStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 100, -1));
-        tabStudentForm.add(txtGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 100, -1));
-        tabStudentForm.add(txtMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 100, -1));
+        tabStudentForm.add(txtGradYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 100, -1));
+        tabStudentForm.add(txtMajorStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 100, -1));
 
         lblStudentForm.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         lblStudentForm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -205,11 +234,11 @@ public class GUI extends javax.swing.JFrame {
                 btnAddStudentStudentFormActionPerformed(evt);
             }
         });
-        tabStudentForm.add(btnAddStudentStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 110, -1));
+        tabStudentForm.add(btnAddStudentStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 110, -1));
 
         cboCurYearStudentForm.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Freshman", "Sophmore", "Junior", "Senior" }));
         cboCurYearStudentForm.setSelectedIndex(-1);
-        tabStudentForm.add(cboCurYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 100, -1));
+        tabStudentForm.add(cboCurYearStudentForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 100, -1));
 
         jTabbedPane1.addTab("Student Form", null, tabStudentForm, "New Student Form");
 
@@ -228,7 +257,7 @@ public class GUI extends javax.swing.JFrame {
                 btnAddTeacherTeacherFormActionPerformed(evt);
             }
         });
-        tabTeacherForm.add(btnAddTeacherTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 110, -1));
+        tabTeacherForm.add(btnAddTeacherTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 130, -1));
         tabTeacherForm.add(txtFirstNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 100, -1));
         tabTeacherForm.add(txtLastNameTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 100, -1));
         tabTeacherForm.add(txtAgeTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 100, -1));
@@ -249,23 +278,23 @@ public class GUI extends javax.swing.JFrame {
         lblTeacherForm.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         lblTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTeacherForm.setText("Teacher Form");
-        tabTeacherForm.add(lblTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 490, 18));
+        tabTeacherForm.add(lblTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 511, 18));
 
         lblTenureTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblTenureTeacherForm.setText("Tenure: ");
-        tabTeacherForm.add(lblTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 80, 20));
+        tabTeacherForm.add(lblTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 80, 20));
 
         lblSalaryTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSalaryTeacherForm.setText("Salary: ");
         lblSalaryTeacherForm.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        tabTeacherForm.add(lblSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 80, 20));
+        tabTeacherForm.add(lblSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 80, 20));
 
         lblDepartmentTeacherForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblDepartmentTeacherForm.setText("Department: ");
-        tabTeacherForm.add(lblDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 80, 20));
-        tabTeacherForm.add(txtTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 100, -1));
-        tabTeacherForm.add(txtDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 100, -1));
-        tabTeacherForm.add(txtSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 100, -1));
+        tabTeacherForm.add(lblDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 80, 20));
+        tabTeacherForm.add(txtTenureTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 100, -1));
+        tabTeacherForm.add(txtDepartmentTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 100, -1));
+        tabTeacherForm.add(txtSalaryTeacherForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 100, -1));
 
         jTabbedPane1.addTab("Teacher Form", null, tabTeacherForm, "New Teacher Form");
 
@@ -285,7 +314,7 @@ public class GUI extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Counselor Form");
-        tabCounselorForm.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 490, 18));
+        tabCounselorForm.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 511, 18));
 
         lblAgeCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblAgeCounselorForm.setText("Age:");
@@ -294,18 +323,18 @@ public class GUI extends javax.swing.JFrame {
 
         lblTenureCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblTenureCounselorForm.setText("Tenure:");
-        tabCounselorForm.add(lblTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 80, 20));
-        tabCounselorForm.add(txtTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 100, -1));
-        tabCounselorForm.add(txtSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 100, -1));
+        tabCounselorForm.add(lblTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 80, 20));
+        tabCounselorForm.add(txtTenureCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 100, -1));
+        tabCounselorForm.add(txtSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 100, -1));
 
         lblSalaryCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSalaryCounselorForm.setText("Salary:");
-        tabCounselorForm.add(lblSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 80, 20));
+        tabCounselorForm.add(lblSalaryCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 80, 20));
 
         lblStudentsCounselorForm.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblStudentsCounselorForm.setText("# of Students:");
-        tabCounselorForm.add(lblStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 80, 20));
-        tabCounselorForm.add(txtStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 100, -1));
+        tabCounselorForm.add(lblStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 80, 20));
+        tabCounselorForm.add(txtStudentsCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 100, -1));
 
         btnAddCounselorCounselorForm.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnAddCounselorCounselorForm.setText("Add Counselor");
@@ -314,7 +343,7 @@ public class GUI extends javax.swing.JFrame {
                 btnAddCounselorCounselorFormActionPerformed(evt);
             }
         });
-        tabCounselorForm.add(btnAddCounselorCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 130, -1));
+        tabCounselorForm.add(btnAddCounselorCounselorForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 130, -1));
 
         jTabbedPane1.addTab("Counselor Form", null, tabCounselorForm, "New Counselor Form");
 
@@ -325,7 +354,7 @@ public class GUI extends javax.swing.JFrame {
         txtFirstNameIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtFirstNameIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtFirstNameIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtFirstNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 72, -1));
+        tabIDLookup.add(txtFirstNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 72, -1));
 
         lblFirstNameIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblFirstNameIDLookup.setText("First Name:");
@@ -341,7 +370,7 @@ public class GUI extends javax.swing.JFrame {
                 cboPersonSelectorIDLookupActionPerformed(evt);
             }
         });
-        tabIDLookup.add(cboPersonSelectorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 79, -1));
+        tabIDLookup.add(cboPersonSelectorIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, 79, -1));
 
         PersonTypeButtonGroup.add(radStudentsIDLookup);
         radStudentsIDLookup.setText("Students");
@@ -350,7 +379,7 @@ public class GUI extends javax.swing.JFrame {
                 radStudentsIDLookupActionPerformed(evt);
             }
         });
-        tabIDLookup.add(radStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 80, -1));
+        tabIDLookup.add(radStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 80, -1));
 
         PersonTypeButtonGroup.add(radTeachersIDLookup);
         radTeachersIDLookup.setText("Teachers");
@@ -359,21 +388,21 @@ public class GUI extends javax.swing.JFrame {
                 radTeachersIDLookupActionPerformed(evt);
             }
         });
-        tabIDLookup.add(radTeachersIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 79, -1));
+        tabIDLookup.add(radTeachersIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 79, -1));
 
         lblLastNameIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblLastNameIDLookup.setText("Last Name:");
-        tabIDLookup.add(lblLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 90, -1));
+        tabIDLookup.add(lblLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 90, -1));
 
         txtLastNameIDLookup.setEditable(false);
         txtLastNameIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtLastNameIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        tabIDLookup.add(txtLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, 73, -1));
+        tabIDLookup.add(txtLastNameIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 73, -1));
 
         lblIDLookup.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         lblIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblIDLookup.setText("ID Lookup");
-        tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 490, 18));
+        tabIDLookup.add(lblIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 511, 18));
 
         PersonTypeButtonGroup.add(radCounselorsIDLookup);
         radCounselorsIDLookup.setSelected(true);
@@ -383,13 +412,13 @@ public class GUI extends javax.swing.JFrame {
                 radCounselorsIDLookupActionPerformed(evt);
             }
         });
-        tabIDLookup.add(radCounselorsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, -1, -1));
+        tabIDLookup.add(radCounselorsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, -1, -1));
 
         txtAgeIDLookup.setEditable(false);
         txtAgeIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtAgeIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtAgeIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtAgeIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 72, -1));
+        tabIDLookup.add(txtAgeIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 72, -1));
 
         lblAgeIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblAgeIDLookup.setText("Age:");
@@ -397,50 +426,50 @@ public class GUI extends javax.swing.JFrame {
 
         lblCurYearAndSalaryIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblCurYearAndSalaryIDLookup.setText("Salary:");
-        tabIDLookup.add(lblCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 90, -1));
+        tabIDLookup.add(lblCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 90, -1));
 
         txtCurYearAndSalaryIDLookup.setEditable(false);
         txtCurYearAndSalaryIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtCurYearAndSalaryIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtCurYearAndSalaryIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, 72, -1));
+        tabIDLookup.add(txtCurYearAndSalaryIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 72, -1));
         tabIDLookup.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, -1, -1));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        tabIDLookup.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, 60, 120));
-        tabIDLookup.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, 100, 10));
-        tabIDLookup.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, 100, 10));
+        tabIDLookup.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, 60, 120));
+        tabIDLookup.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 100, 10));
+        tabIDLookup.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 80, 100, 10));
 
         lblGradDateAndDepartmentAndStudentsIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblGradDateAndDepartmentAndStudentsIDLookup.setText("# of Students:");
-        tabIDLookup.add(lblGradDateAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 190, 100, -1));
+        tabIDLookup.add(lblGradDateAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 190, 100, -1));
 
         txtGradYearAndDepartmentAndStudentsIDLookup.setEditable(false);
         txtGradYearAndDepartmentAndStudentsIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtGradYearAndDepartmentAndStudentsIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtGradYearAndDepartmentAndStudentsIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtGradYearAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 72, -1));
+        tabIDLookup.add(txtGradYearAndDepartmentAndStudentsIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 72, -1));
 
         lblMajorAndTenureIDLookup.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblMajorAndTenureIDLookup.setText("Tenure:");
-        tabIDLookup.add(lblMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 50, -1));
+        tabIDLookup.add(lblMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 50, -1));
 
         txtMajorAndTenureIDLookup.setEditable(false);
         txtMajorAndTenureIDLookup.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtMajorAndTenureIDLookup.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtMajorAndTenureIDLookup.setRequestFocusEnabled(false);
-        tabIDLookup.add(txtMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 72, -1));
+        tabIDLookup.add(txtMajorAndTenureIDLookup, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 72, -1));
 
         jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        tabIDLookup.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 20, 120));
+        tabIDLookup.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, 20, 120));
 
         jTabbedPane1.addTab("ID Lookup", null, tabIDLookup, "Lookup Person By ID");
 
         tabClassList.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblTeacherID.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblTeacherID.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTeacherID.setText("Teacher ID:");
-        tabClassList.add(lblTeacherID, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, 22));
+        tabClassList.add(lblTeacherID, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, -1, 22));
 
         lblClassList.setText("Class List:");
         tabClassList.add(lblClassList, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 70, 20));
@@ -450,38 +479,38 @@ public class GUI extends javax.swing.JFrame {
         txtClassList.setRows(5);
         jScrollPane1.setViewportView(txtClassList);
 
-        tabClassList.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 370, 120));
+        tabClassList.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 367, 200));
 
         cboTeacherID.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cboTeacherIDItemStateChanged(evt);
             }
         });
-        tabClassList.add(cboTeacherID, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 110, -1));
+        tabClassList.add(cboTeacherID, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 110, -1));
 
         lblClassListTItle.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
         lblClassListTItle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblClassListTItle.setText("Class List");
-        tabClassList.add(lblClassListTItle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 490, 18));
+        tabClassList.add(lblClassListTItle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 511, 18));
 
         jTabbedPane1.addTab("Class List", null, tabClassList, "Teacher Class List");
 
         tabClassEnrollment.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Student ID:");
-        tabClassEnrollment.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, -1, -1));
-        tabClassEnrollment.add(txtStudentIDNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 120, 30));
+        tabClassEnrollment.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        tabClassEnrollment.add(txtStudentIDNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 110, 30));
 
-        jLabel2.setText("Course Name:");
-        tabClassEnrollment.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, 20));
+        jLabel2.setText("Course 1 Name:");
+        tabClassEnrollment.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 20));
 
-        jLabel3.setText("Course Department:");
-        tabClassEnrollment.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 110, 20));
+        jLabel3.setText("Course 1 Department:");
+        tabClassEnrollment.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 110, 20));
 
-        jLabel4.setText("Course Professor:");
-        tabClassEnrollment.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, 20));
-        tabClassEnrollment.add(txtC1Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 119, -1));
+        jLabel4.setText("Course 1 Professor:");
+        tabClassEnrollment.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
+        tabClassEnrollment.add(txtC1Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 119, -1));
 
         cboC1Dpt.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -493,20 +522,108 @@ public class GUI extends javax.swing.JFrame {
                 cboC1DptProfFinder(evt);
             }
         });
-        tabClassEnrollment.add(cboC1Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 119, -1));
+        tabClassEnrollment.add(cboC1Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 119, -1));
 
         cboC1Prof.setToolTipText("");
-        tabClassEnrollment.add(cboC1Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 119, -1));
+        tabClassEnrollment.add(cboC1Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 119, -1));
 
-        btnAddClasses.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("Course 2 Name:");
+        tabClassEnrollment.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, 20));
+
+        jLabel6.setText("Course 2 Department:");
+        tabClassEnrollment.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 110, 20));
+
+        jLabel7.setText("Course 2 Professor:");
+        tabClassEnrollment.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, 20));
+        tabClassEnrollment.add(txtC2Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 119, -1));
+
+        cboC2Dpt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboC2DptProfFinder(evt);
+            }
+        });
+        tabClassEnrollment.add(cboC2Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 119, 20));
+
+        tabClassEnrollment.add(cboC2Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 119, -1));
+
+        jLabel8.setText("Course 3 Name:");
+        tabClassEnrollment.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, 20));
+
+        jLabel9.setText("Course 3 Department:");
+        tabClassEnrollment.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, 20));
+
+        jLabel10.setText("Course 3 Professor:");
+        tabClassEnrollment.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, 20));
+        tabClassEnrollment.add(txtC3Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 120, -1));
+
+        cboC3Dpt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboC3DptProfFinder(evt);
+            }
+        });
+        tabClassEnrollment.add(cboC3Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 116, -1));
+
+        tabClassEnrollment.add(cboC3Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 115, -1));
+
+        jLabel11.setText("Course 4 Name:");
+        tabClassEnrollment.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, 20));
+
+        jLabel12.setText("Course 4 Department:");
+        tabClassEnrollment.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, 20));
+
+        jLabel14.setText("Course 4 Professor:");
+        tabClassEnrollment.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, -1, 20));
+        tabClassEnrollment.add(txtC4Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, 117, -1));
+
+        jLabel15.setText("Course 5 Name:");
+        tabClassEnrollment.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, -1, 20));
+
+        jLabel16.setText("Course 5 Department:");
+        tabClassEnrollment.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, 20));
+
+        jLabel17.setText("Course 5 Professor:");
+        tabClassEnrollment.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 220, -1, 20));
+        tabClassEnrollment.add(txtC5Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, 117, -1));
+
+        cboC5Dpt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboC5DptProfFinder(evt);
+            }
+        });
+        tabClassEnrollment.add(cboC5Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, 117, -1));
+
+        cboC4Dpt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboC4DptProfFinder(evt);
+            }
+        });
+        tabClassEnrollment.add(cboC4Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 117, -1));
+
+        tabClassEnrollment.add(cboC4Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 110, 117, -1));
+
+        tabClassEnrollment.add(cboC5Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 117, -1));
+
+        jLabel18.setText("Course 6 Name:");
+        tabClassEnrollment.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, -1, 20));
+
+        jLabel19.setText("Course 6 Department:");
+        tabClassEnrollment.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, 20));
+
+        jLabel20.setText("Course 6 Professor:");
+        tabClassEnrollment.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 100, 20));
+        tabClassEnrollment.add(txtC6Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, 117, -1));
+
+        cboC6Dpt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cboC6DptProfFinder(evt);
+            }
+        });
+        tabClassEnrollment.add(cboC6Dpt, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 117, -1));
+
+        tabClassEnrollment.add(cboC6Prof, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 330, 117, -1));
+
         btnAddClasses.setText("Add Classes");
-        tabClassEnrollment.add(btnAddClasses, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Courier New", 1, 18)); // NOI18N
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("Course Enrollment Form");
-        jLabel21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        tabClassEnrollment.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 490, 18));
+        tabClassEnrollment.add(btnAddClasses, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, -1, -1));
 
         jTabbedPane1.addTab("Class Enrollment", null, tabClassEnrollment, "Student Class Enrollment");
 
@@ -514,16 +631,13 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 511, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 548, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jTabbedPane1.getAccessibleContext().setAccessibleName("Tabs");
@@ -665,7 +779,17 @@ public class GUI extends javax.swing.JFrame {
         txtDepartmentTeacherForm.setText("");
         //Clears Comboboxes
         cboC1Dpt.setSelectedIndex(-1);
+        cboC2Dpt.setSelectedIndex(-1);
+        cboC3Dpt.setSelectedIndex(-1);
+        cboC4Dpt.setSelectedIndex(-1);
+        cboC5Dpt.setSelectedIndex(-1);
+        cboC6Dpt.setSelectedIndex(-1);
         cboC1Prof.setSelectedIndex(-1);
+        cboC2Prof.setSelectedIndex(-1);
+        cboC3Prof.setSelectedIndex(-1);
+        cboC4Prof.setSelectedIndex(-1);
+        cboC5Prof.setSelectedIndex(-1);
+        cboC6Prof.setSelectedIndex(-1);
         
         //Immediatly Adds ID to the ID Lookup combo box if the teachers button is selected
         //*******KAVEENS EDITS*******//
@@ -676,6 +800,11 @@ public class GUI extends javax.swing.JFrame {
         if(cboC1Dpt.getItemCount() == 0)
         {
             cboC1Dpt.addItem(newTeacher.getDepartment());
+            cboC2Dpt.addItem(newTeacher.getDepartment());
+            cboC3Dpt.addItem(newTeacher.getDepartment());
+            cboC4Dpt.addItem(newTeacher.getDepartment());
+            cboC5Dpt.addItem(newTeacher.getDepartment());
+            cboC6Dpt.addItem(newTeacher.getDepartment());
         }
         else
         {
@@ -688,6 +817,11 @@ public class GUI extends javax.swing.JFrame {
                 }
             }
             cboC1Dpt.addItem(newTeacher.getDepartment());
+            cboC2Dpt.addItem(newTeacher.getDepartment());
+            cboC3Dpt.addItem(newTeacher.getDepartment());
+            cboC4Dpt.addItem(newTeacher.getDepartment());
+            cboC5Dpt.addItem(newTeacher.getDepartment());
+            cboC6Dpt.addItem(newTeacher.getDepartment());
             counter++;
         }
        
@@ -800,6 +934,66 @@ public class GUI extends javax.swing.JFrame {
        
     }//GEN-LAST:event_cboC1DptProfFinder
 
+    private void cboC2DptProfFinder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboC2DptProfFinder
+        // TODO add your handling code here:
+        cboC2Prof.removeAllItems();
+       for(int ctr = 0; ctr < professor.size(); ctr++)
+       {
+           if(cboC2Dpt.getSelectedItem().equals(professor.get(ctr).getDepartment()))
+           {
+               cboC2Prof.addItem(professor.get(ctr).getLastName() + ", " + professor.get(ctr).getFirstName());
+           }
+       }
+    }//GEN-LAST:event_cboC2DptProfFinder
+
+    private void cboC3DptProfFinder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboC3DptProfFinder
+        // TODO add your handling code here:
+        cboC3Prof.removeAllItems();
+       for(int ctr = 0; ctr < professor.size(); ctr++)
+       {
+           if(cboC3Dpt.getSelectedItem().equals(professor.get(ctr).getDepartment()))
+           {
+               cboC3Prof.addItem(professor.get(ctr).getLastName() + ", " + professor.get(ctr).getFirstName());
+           }
+       }
+    }//GEN-LAST:event_cboC3DptProfFinder
+
+    private void cboC4DptProfFinder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboC4DptProfFinder
+        // TODO add your handling code here:
+        cboC4Prof.removeAllItems();
+       for(int ctr = 0; ctr < professor.size(); ctr++)
+       {
+           if(cboC4Dpt.getSelectedItem().equals(professor.get(ctr).getDepartment()))
+           {
+               cboC4Prof.addItem(professor.get(ctr).getLastName() + ", " + professor.get(ctr).getFirstName());
+           }
+       }
+    }//GEN-LAST:event_cboC4DptProfFinder
+
+    private void cboC5DptProfFinder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboC5DptProfFinder
+        // TODO add your handling code here:
+        cboC5Prof.removeAllItems();
+       for(int ctr = 0; ctr < professor.size(); ctr++)
+       {
+           if(cboC5Dpt.getSelectedItem().equals(professor.get(ctr).getDepartment()))
+           {
+               cboC5Prof.addItem(professor.get(ctr).getLastName() + ", " + professor.get(ctr).getFirstName());
+           }
+       }
+    }//GEN-LAST:event_cboC5DptProfFinder
+
+    private void cboC6DptProfFinder(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboC6DptProfFinder
+        // TODO add your handling code here:
+        cboC6Prof.removeAllItems();
+       for(int ctr = 0; ctr < professor.size(); ctr++)
+       {
+           if(cboC6Dpt.getSelectedItem().equals(professor.get(ctr).getDepartment()))
+           {
+               cboC6Prof.addItem(professor.get(ctr).getLastName() + ", " + professor.get(ctr).getFirstName());
+           }
+       }
+    }//GEN-LAST:event_cboC6DptProfFinder
+
     private void cboPersonSelectorIDLookupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboPersonSelectorIDLookupActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cboPersonSelectorIDLookupActionPerformed
@@ -845,6 +1039,16 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton btnAddTeacherTeacherForm;
     private javax.swing.JComboBox<String> cboC1Dpt;
     private javax.swing.JComboBox<String> cboC1Prof;
+    private javax.swing.JComboBox<String> cboC2Dpt;
+    private javax.swing.JComboBox<String> cboC2Prof;
+    private javax.swing.JComboBox<String> cboC3Dpt;
+    private javax.swing.JComboBox<String> cboC3Prof;
+    private javax.swing.JComboBox<String> cboC4Dpt;
+    private javax.swing.JComboBox<String> cboC4Prof;
+    private javax.swing.JComboBox<String> cboC5Dpt;
+    private javax.swing.JComboBox<String> cboC5Prof;
+    private javax.swing.JComboBox<String> cboC6Dpt;
+    private javax.swing.JComboBox<String> cboC6Prof;
     private javax.swing.JComboBox<String> cboCurYearStudentForm;
     private javax.swing.JComboBox<String> cboPersonSelectorIDLookup;
     private javax.swing.JComboBox<String> cboTeacherID;
@@ -853,11 +1057,25 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -910,6 +1128,11 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField txtAgeStudentForm;
     private javax.swing.JTextField txtAgeTeacherForm;
     private javax.swing.JTextField txtC1Name;
+    private javax.swing.JTextField txtC2Name;
+    private javax.swing.JTextField txtC3Name;
+    private javax.swing.JTextField txtC4Name;
+    private javax.swing.JTextField txtC5Name;
+    private javax.swing.JTextField txtC6Name;
     private javax.swing.JTextArea txtClassList;
     private javax.swing.JTextField txtCurYearAndSalaryIDLookup;
     private javax.swing.JTextField txtDepartmentTeacherForm;
